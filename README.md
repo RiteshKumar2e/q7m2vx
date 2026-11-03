@@ -207,6 +207,9 @@ curl http://localhost:8000/api/health
 The response should contain `"status":"ok"`. If the frontend shows an API error,
 make sure the backend is still running on port `8000` and refresh the page.
 
+To stop local development, press `Ctrl+C` in both terminals. The Python virtual
+environment can be reused the next time you run the backend.
+
 ### With Docker (Windows 11 + Docker Desktop, WSL 2)
 
 **Prerequisites:** Docker Desktop running, and an internet connection for the first build, which pulls `node:22-alpine` and `python:3.12-slim`.
