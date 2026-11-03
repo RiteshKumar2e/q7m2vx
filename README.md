@@ -191,6 +191,18 @@ npm run dev
 
 Open http://localhost:5173. API docs are at http://localhost:8000/docs.
 
+### Quick verification
+
+After starting both services, confirm that the backend is ready before opening the
+frontend:
+
+```powershell
+curl http://localhost:8000/api/health
+```
+
+The response should contain `"status":"ok"`. If the frontend shows an API error,
+make sure the backend is still running on port `8000` and refresh the page.
+
 ### With Docker (Windows 11 + Docker Desktop, WSL 2)
 
 **Prerequisites:** Docker Desktop running, and an internet connection for the first build, which pulls `node:22-alpine` and `python:3.12-slim`.
