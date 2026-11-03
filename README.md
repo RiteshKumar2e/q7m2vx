@@ -171,6 +171,10 @@ flowchart LR
 
 ### Without Docker (two terminals)
 
+**Prerequisites:** Python 3.10 or newer and Node.js with npm installed. The Docker
+build uses Python 3.12 and Node.js 22, which are also recommended for local
+development.
+
 ```powershell
 # Terminal 1: backend on :8000
 cd backend
