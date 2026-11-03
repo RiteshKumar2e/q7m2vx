@@ -210,6 +210,10 @@ make sure the backend is still running on port `8000` and refresh the page.
 To stop local development, press `Ctrl+C` in both terminals. The Python virtual
 environment can be reused the next time you run the backend.
 
+If port `8000` is already in use, start FastAPI on another port and set
+`VITE_PROXY_TARGET` in `frontend/.env` to the matching backend URL. Vite will
+normally choose the next available frontend port automatically.
+
 ### With Docker (Windows 11 + Docker Desktop, WSL 2)
 
 **Prerequisites:** Docker Desktop running, and an internet connection for the first build, which pulls `node:22-alpine` and `python:3.12-slim`.
